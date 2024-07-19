@@ -42,9 +42,9 @@ body {
     padding: 25px;
 }
 
-/* .section {
+.section {
     display: none;
-} */
+}
 
 .section.active {
     display: block;
