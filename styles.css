@@ -1,47 +1,50 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .header {
+    font-family: "Playfair Display", serif;
     background-color: #808080;
     color: white;
     padding: 20px;
     text-align: center;
+    font-size: larger;
 }
 
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: #333;
+    background-color: #333333;
 }
 
 .nav-button {
-    background-color: #333;
+    font-family: "Roboto", sans-serif;
+    background-color: #333333;
     border: none;
     color: white;
-    padding: 14px 20px;
+    padding: 15px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 18px;
+    margin: 0px 3px;
     cursor: pointer;
 }
 
 .nav-button:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #4b4b4b;
+    color: #ffffff;
 }
 
 .content {
-    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    padding: 25px;
 }
 
-.section {
+/* .section {
     display: none;
-}
+} */
 
 .section.active {
     display: block;
