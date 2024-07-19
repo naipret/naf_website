@@ -1,15 +1,41 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <!-- <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-        <title>mainpage</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <header>
-            <h1>Welcome to NAF Website</h1>
-        </header>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naipret and Friends</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Naipret and Friends</h1>
+    </div>
+    <div class="navbar">
+        <button class="nav-button" onclick="showSection('home')">Trang chủ</button>
+        <button class="nav-button" onclick="showSection('info')">Thông tin</button>
+        <button class="nav-button" onclick="showSection('more')">Thêm</button>
+    </div>
+    <div class="content">
+        <div id="home" class="section">
+            <h2>Trang chủ</h2>
+            <p>Ip Server : naf.is-cool.dev:25040 <br>
+               Phiên bản : 1.16.5 - 1.21+ <br>
+               Thể loại : Survival <br>
+
+            </p>
+            <li>Rất nhiều người bạn mới đang chờ bạn ở trong server đấy . Tham gia ngay còn chờ gì nữa !</li>
+        </div>
+        <div id="info" class="section" style="display: none;">
+            <h2>Thông tin</h2>
+            <p>Season 4 mở từ lúc 7h30 ngày 18/7/2024 . Server với lối chơi Survival không có shop hay money . Có nhiều những plugins , datapacks giúp cải thiện trải nghiệm của người chơi .</p>
+        </div>
+        <div id="more" class="section" style="display: none;">
+            <h2>Thêm</h2>
+            <p>Trang web này chỉ là bản beta chưa có j nhiều.</p>
+            <p2>Owner : naipret</p2>
+            <p3>Admin : hjeyki</p3>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
 </html>
