@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* .section {
+    display: none;
+} */
+
+.section.active {
+    display: block;
+}
