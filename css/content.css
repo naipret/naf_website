@@ -1,6 +1,66 @@
 .content {
     font-family: "Roboto", sans-serif;
-    padding: 25px;
+    padding: 150px;
     background-color: rgb(236, 236, 236);
+    display: flex; /* Sử dụng flexbox để sắp xếp các phần tử theo hàng */
+    align-items: flex-start; /* Căn chỉnh các phần tử theo chiều dọc */
+    gap: 20px; /* Khoảng cách giữa logo và nội dung */
 }
 
+.content-logo {
+    flex: 1; /* Cho phép logo chiếm không gian theo tỷ lệ */
+    display: flex; /* Để căn chỉnh nội dung của logo */
+    justify-content: center; /* Căn giữa logo theo chiều ngang */
+}
+
+.logo {
+    height: 100px;
+}
+
+.content-text {
+    flex: 3; /* Cho phép nội dung chiếm nhiều không gian hơn logo */
+    display: flex; /* Để căn chỉnh các phần tử bên trong content-text */
+    flex-direction: column; /* Để các phần tử trong nội dung xếp chồng lên nhau theo cột */
+    flex-direction: row;
+}
+/* Cái section là để chỉnh cho phần nội dung ẩn hay hiện */
+.section {
+    display: none;
+}
+
+.section.active {
+    display:inline;
+}
+/*Cái này là nội dung của home */
+
+.section-home-header {
+
+    color: #111111;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+}
+.section-home-body1 {
+    display:inline;
+    text-decoration-line: underline;
+    font-size:45px;
+    color:rgb(63, 63, 70);
+    font-weight:600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.section-home-body2 {
+    display:inline;
+    font-weight: bolder;
+    font-size:45px;
+    color:rgb(63, 63, 70);
+    margin-left:2dvh;
+}
+.section-home-body3 {
+    display:inline;
+    text-decoration-color: gray;
+    font-weight:lighter;
+    font-size:30px;
+    color:rgb(63, 63, 70);
+    margin-left:5px;
+}

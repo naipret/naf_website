@@ -7,7 +7,7 @@ function showSection(sectionId, button) {
 
     // Hiển thị phần nội dung được chọn
     const activeSection = document.getElementById(sectionId);
-    activeSection.style.display = 'block';
+    activeSection.style.display = 'inline';
 
     // Xóa lớp 'active' từ tất cả các nút
     const buttons = document.querySelectorAll('.naf-button');
