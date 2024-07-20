@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <title>naipret and friends</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="styles.css" />
-    </head>
 
-    <body>
-        <div class="header">
-            <h1>NAIPRET AND FRIENDS</h1>
+<head>
+    <title>naipret and friends</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap"
+        rel="stylesheet" />
+    <!-- Link CSS files -->
+    <link rel="stylesheet" href="css/bar.css" />
+    <link rel="stylesheet" href="css/content.css" />
+    <link rel="stylesheet" href="css/more.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body style="background-color: white;">
+    <div class="nafbar">
+        <div class="nafbar-left"><img class="nafbar-logo" src="src/img/NAIPRET3.png"></div>
+        <div class="nafbar-right">
+            <button class="naf-button" onclick="showSection('home', this)">Trang chủ</button>
+            <button class="naf-button" onclick="showSection('info', this)">Thông tin</button>
+            <button class="naf-button" onclick="showSection('more', this)">Thêm</button>
+            <button class="naf-button3"><strong>┊</strong></button>
+            <a href="https://github.com/naipret/naf_website" target="_blank" class="naf-button2">Github</a>
         </div>
-        <div class="navbar">
-            <button class="nav-button" onclick="showSection('home')">
-                Trang chủ
-            </button>
-            <button class="nav-button" onclick="showSection('info')">
-                Thông tin
-            </button>
-            <button class="nav-button" onclick="showSection('more')">
-                Thêm
-            </button>
+    </div>
+    <div class="content">
+        <div class="content-logo">
+            <img class="logo" src="src\img\server-icon.png">
         </div>
-        <div class="content">
+        <div class="content-text">
             <div id="home" class="section">
-                <h2># Trang chủ</h2>
+                <h2 class="section-home-header">Tham gia server tại</h2>
                 <p>
-                    Ip: naf.is-cool.dev:25040 <br />
-                    Phiên bản: 1.16.x - 1.21.x <br />
-                    Thể loại: Survival <br />
-                </p>
-                <p>
-                    Rất nhiều người bạn mới đang chờ bạn ở trong server đấy.
-                    <br />
-                    Tham gia ngay thôi!
+                <p class="section-home-body1">IP:</p>
+                <p class="section-home-body2">naf.is-cool.dev:25040</p>
+                <p class="section-home-body3">(ss4)</p><br />
                 </p>
             </div>
-            <div id="info" class="section" style="display: none">
+            <div id="info" class="section">
                 <h2># Thông tin</h2>
                 <p>
                     Season 4 mở từ lúc 7h30 ngày 18/7/2024. <br />
@@ -52,13 +51,22 @@
                     của người chơi.
                 </p>
             </div>
-            <div id="more" class="section" style="display: none">
+            <div id="more" class="section">
                 <h2># Thêm</h2>
                 <p>Trang web này chỉ là bản beta chưa có gì nhiều.</p>
-                <p2>Owner: naipret</p2> <br />
-                <p2>Admin: hjeyki</p2>
+                <p>Owner: naipret</p> <br />
+                <p>Admin: hjeyki</p>
             </div>
         </div>
-        <script src="scripts.js"></script>
-    </body>
+    </div>
+
+    <div class="more">
+        <p class="more-text1"> Nghiêm cấm các hành vi hack,cheat</p>
+        <p class="more-text2"> Nếu bạn có ý kiến hay đóng góp vui lòng liên hệ admin</p>
+        <a class="more-button" href="https://www.facebook.com/naipret" target="_blank"> LIÊN HỆ</a>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
 </html>
