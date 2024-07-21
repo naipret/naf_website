@@ -1,71 +1,49 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-    <title>naipret and friends</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Google fonts API -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap"
-        rel="stylesheet" />
-    <!-- Link CSS files -->
-    <link rel="stylesheet" href="css/bar.css" />
-    <link rel="stylesheet" href="css/content.css" />
-    <link rel="stylesheet" href="css/more.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web với Taskbar</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body style="background-color: white;">
-    <div class="nafbar">
-        <div class="nafbar-left"><img class="nafbar-logo" src="src/img/NAIPRET3.png"></div>
-        <div class="nafbar-right">
-            <button class="naf-button" onclick="showSection('home', this)">Trang chủ</button>
-            <button class="naf-button" onclick="showSection('info', this)">Thông tin</button>
-            <button class="naf-button" onclick="showSection('more', this)">Thêm</button>
-            <button class="naf-button3"><strong>┊</strong></button>
-            <a href="https://github.com/naipret/naf_website" target="_blank" class="naf-button2">Github</a>
+<body>
+    <div class="container">
+        <div id="taskbar" class="taskbar">
+            <div><img class="logo" src="src\server-icon.png"></div>
+            <a></a>
+            <button class="nav-btn" onclick="showContent(1)">Minecraft</button>
+            <button class="nav-btn" onclick="showContent(2)">Discord</button>
+            <button class="nav-btn" onclick="showContent(3)">Nút</button>
+            <button class="nav-btn" onclick="showContent(4)">Nút</button>
+            <button id="toggle-taskbar-btn" class="toggle-btn" class="hide-btn" onclick="toggleTaskbar()">
+                <img src="src\left-button.png" style="height:5dvh">
+            </button>
         </div>
-    </div>
-    <div class="content">
-        <div class="content-logo">
-            <img class="logo" src="src\img\server-icon.png">
-        </div>
-        <div class="content-text">
-            <div id="home" class="section">
-                <h2 class="section-home-header">Tham gia server tại</h2>
-                <p>
-                <p class="section-home-body1">IP:</p>
-                <p class="section-home-body2">naf.is-cool.dev:25040</p>
-                <p class="section-home-body3">(ss4)</p><br />
-                </p>
-            </div>
-            <div id="info" class="section">
-                <h2># Thông tin</h2>
-                <p>
-                    Season 4 mở từ lúc 7h30 ngày 18/7/2024. <br />
-                    Server với lối chơi Survival không có shop hay money. <br />
-                    Có nhiều những plugins, datapacks giúp cải thiện trải nghiệm
-                    của người chơi.
-                </p>
-            </div>
-            <div id="more" class="section">
-                <h2># Thêm</h2>
-                <p>Trang web này chỉ là bản beta chưa có gì nhiều.</p>
-                <p>Owner: naipret</p> <br />
-                <p>Admin: hjeyki</p>
-            </div>
-        </div>
-    </div>
+        <div class="content">
+            <div id="content1" class="content-item">
+                <div class="content1-ip1">
+                    <button class="copy-button" onclick="copyText()">
+                        <img src="src\coppy-button.png" class="coppy-button">
+                    </button>
 
-    <div class="more">
-        <p class="more-text1"> Nghiêm cấm các hành vi hack,cheat</p>
-        <p class="more-text2"> Nếu bạn có ý kiến hay đóng góp vui lòng liên hệ admin</p>
-        <a class="more-button" href="https://www.facebook.com/naipret" target="_blank"> LIÊN HỆ</a>
+                </div>
+            </div>
+            <div id="content2" class="content-item" style="display: none;">
+                Nội dung 2
+            </div>
+            <div id="content3" class="content-item" style="display: none;">
+                Nội dung 3
+            </div>
+            <div id="content4" class="content-item" style="display: none;">
+                Nội dung 4
+            </div>
+        </div>
+        <button id="show-taskbar-btn" class="show-btn" onclick="toggleTaskbar()" style="display: none;">
+            <img class="show-btn" src="src\right-button.png">
+        </button>
     </div>
-
     <script src="scripts.js"></script>
 </body>
 
